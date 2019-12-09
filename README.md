@@ -1,6 +1,8 @@
 # NgB3b
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+##
+![Build Status](https://github.com/RakeMax/Angular-TP/workflows/Angular%20CI/badge.svg)
 
 ## Development server
 
