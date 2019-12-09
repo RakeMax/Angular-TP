@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-b3b';
+  styleVar='pointer';
+
+  click(){
+    this.title ='stop';
+  }
 }
