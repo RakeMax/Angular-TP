@@ -8,7 +8,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 export class LoginComponent implements OnInit {
 
-  login = 'Bret';
+  Username = 'Bret';
  // mdp:string;
   logged = false;
   loading = false;
@@ -48,11 +48,11 @@ export class LoginComponent implements OnInit {
     console.log('login', this.login);
     console.log('mdp', this.mdp);*/
     this.loading = true;
-    this.http.get('https://jsonplaceholder.typicode.com/users?username=' + this.login)
+    this.http.get('https://jsonplaceholder.typicode.com/users?username=' + this.Username)
       .subscribe((value: any[]) => {
         //console.log('get',value.length);
         //Traitement OK
-        console.log(value[0].company.name)
+        //console.log(value[0].company.name)
         if(value.length === 1){
           this.logged = true;
         }
